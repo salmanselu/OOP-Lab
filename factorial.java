@@ -1,11 +1,12 @@
-
+import java.util.Scanner;
 
 class factorial{
     public static void main(String args[]){
-        int num = 5;
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
         int fact = 1;
         for(int i = 1; i <= num; i++){
-            fact *= i;
+            fact = fact * i;
         }
         System.out.println("Factorial of "+num+" is "+fact);
     }

@@ -12,11 +12,11 @@ class arraydemo{
         {
             arr[i] = sc.nextInt();
         }
-        for(int i = 0; i < arr.length; i++)
+        for(int i = 0; i < length; i++)
         {
             sum += arr[i];
         }
-        average = sum / arr.length;
+        average = (float)sum/length;
         System.out.println("Sum of elements of array:"+sum);
         System.out.println("Average of elements of array:"+average);
     }
